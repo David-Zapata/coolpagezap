@@ -11,7 +11,6 @@ header {
     margin: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 } 
 
 .zapata {
@@ -42,11 +41,12 @@ button {
 
 /* Targetting only the <a> elements within a <nav> element */
 
-nav a {
+a {
     text-decoration: none;
     font-size: 24px;
     font-weight: 400;
-    cursor: pointer
+    cursor: pointer;
+    padding: 8px 16px;
 }
 
 nav a:hover {
@@ -56,8 +56,9 @@ nav a:hover {
 
 /* Part 2.1: Main Video */
 
-.figma-video {
-    height: 350px;
+.main video {
+    height: 500px;
+    align-items: center;
 }
 
 /* This is a common class used in a lot of elements */
