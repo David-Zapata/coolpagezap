@@ -31,13 +31,61 @@ button {
     border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
-    border: none;
+    border: 0;
     padding-top: 14px;
     padding-right: 24px;
     padding-bottom: 16px;
     padding-left: 24px;
     cursor: pointer;
+    box-shadow: 10px 20px 10px grey ;
+    transition-duration: 2s;
 }
+
+button:hover {
+    box-shadow: 10px 20px 10px rgb(97, 96, 96);
+    /* transform: rotate(15deg); */
+    /* transform: scale(1.1); */
+    /* transform: skew(15deg); */
+    /*transition-duration: 1s; */  
+    transform: translateY(-20px);
+}
+
+@media (max-width: 300px) {
+
+    p {
+        font-weight: 700;
+    }
+
+    button {
+        color: red;
+        font-size: 28px;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.main-video-flexbox {
+    animation-name: zapata;
+    animation-duration: 4s;
+}
+
+@keyframes zapata {
+    from {
+       margin-right: 600px;
+       margin-top: 500px;
+    }
+    to {
+       margin-right: 10px;
+       margin-top: 0px;
+    }
+}
+
+
+
 
 /* Targetting only the <a> elements within a <nav> element */
 
